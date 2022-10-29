@@ -1,7 +1,10 @@
 package dad.calculadora;
 
+import javafx.beans.property.SimpleStringProperty;
+import javafx.beans.property.StringProperty;
+
 /**
- * Implementación de la lógica de una calculadora.
+ * Implementaciï¿½n de la lï¿½gica de una calculadora.
  * @author Fran Vargas
  */
 public class Calculadora {
@@ -17,7 +20,7 @@ public class Calculadora {
 	private Double operando;
 	private char operador;
 	private Boolean nuevoOperando;
-	private String pantalla;
+	private StringProperty pantalla= new SimpleStringProperty();
 	
 	public Calculadora() {
 		borrar();
@@ -27,12 +30,12 @@ public class Calculadora {
 	 * Devuelve el contenido de la pantalla de la calculadora.
 	 * @return Cadena de texto con el contenido de la pantalla de la calculdora.
 	 */
-	public String getPantalla() {
-		return pantalla;
-	}
+//	public String getPantalla() {
+//		return pantalla;
+//	}
 
 	/**
-	 * Inicializa por completo la calculadora, borrando la información que tiene memorizada y la pantalla.
+	 * Inicializa por completo la calculadora, borrando la informaciï¿½n que tiene memorizada y la pantalla.
 	 */
 	public void borrar() {
 		operando = 0.0;
@@ -41,20 +44,20 @@ public class Calculadora {
 	}
 	
 	/**
-	 * Borra lo que hay en la pantalla (el último operando introducido).
+	 * Borra lo que hay en la pantalla (el ï¿½ltimo operando introducido).
 	 */
 	public void borrarTodo() {
 		nuevoOperando = true;
-		pantalla = "0.0";
+		pantalla.set("0.0");
 	}
 	
 	/**
-	 * Indica a la calculadora que realice la operación indicada. 
-	 * @param operador Operación a realizar; usar una constante: IGUAL, SUMAR, RESTAR, MULTIPLCIAR, DIVIDIR.
+	 * Indica a la calculadora que realice la operaciï¿½n indicada. 
+	 * @param operador Operaciï¿½n a realizar; usar una constante: IGUAL, SUMAR, RESTAR, MULTIPLCIAR, DIVIDIR.
 	 */
 	public void operar(char operador) {
 		nuevoOperando = true;
-		double operando2 = Double.parseDouble(pantalla);
+		double operando2 = Double.parseDouble(pantalla.get());
 		switch (this.operador) {
 			case SUMAR: operando += operando2; break;
 			case RESTAR: operando -= operando2; break;
@@ -63,32 +66,41 @@ public class Calculadora {
 			case IGUAL: operando = operando2; break;
 		}
 		this.operador = operador;
-		pantalla = "" + operando;
+		pantalla.set( "" + operando);
 	}
 	
 	/**
 	 * Inserta una coma en el operando actual (pantalla).
 	 */
 	public void insertarComa() {
-		if (!pantalla.contains("" + COMA)) {
-			pantalla += COMA;
+		if (!pantalla.get().contains("" + COMA)) {
+			pantalla.set(pantalla.get()+ COMA);
 		}
 	}
 	
 	/**
-	 * Inserta un dígito en el operando actual (pantalla).
+	 * Inserta un dï¿½gito en el operando actual (pantalla).
 	 * @param digito Digito a introducir en la pantalla.
 	 */
 	public void insertar(char digito) {
 		if (digito >= '0' && digito <= '9') {
 			if (nuevoOperando) {
 				nuevoOperando = false;
-				pantalla = "";
+				pantalla.set("");
 			}
-			pantalla += digito;
+			pantalla.set(pantalla.get() + digito);
 		} else if (digito == COMA) {
 			insertarComa();
 		}
+	}
+
+	public final StringProperty pantallaProperty() {
+		return this.pantalla;
+	}
+	
+
+	public final String getPantallaproperty() {
+		return this.pantallaProperty().get();
 	}
 	
 }

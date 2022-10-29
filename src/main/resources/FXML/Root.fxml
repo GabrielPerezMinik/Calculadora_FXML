@@ -40,7 +40,7 @@
             <Font size="27.0" />
          </font>
       </Button>
-      <Button fx:id="ochoButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: black;" text="8" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+      <Button fx:id="ochoButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onPulsarAction" style="-fx-background-color: black;" text="8" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
          <GridPane.margin>
             <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
          </GridPane.margin>
@@ -48,7 +48,7 @@
             <Font size="27.0" />
          </font>
       </Button>
-      <Button fx:id="nueveButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: black;" text="9" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="1">
+      <Button fx:id="nueveButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onPulsarAction" style="-fx-background-color: black;" text="9" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="1">
          <GridPane.margin>
             <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
          </GridPane.margin>
@@ -72,7 +72,7 @@
             <Font size="27.0" />
          </font>
       </Button>
-      <Button fx:id="unoButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: black;" text="1" textFill="WHITE" GridPane.rowIndex="3">
+      <Button fx:id="unoButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onPulsarAction" style="-fx-background-color: black;" text="1" textFill="WHITE" GridPane.rowIndex="3">
          <GridPane.margin>
             <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
          </GridPane.margin>
@@ -80,7 +80,7 @@
             <Font size="27.0" />
          </font>
       </Button>
-      <Button fx:id="dosButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: black;" text="2" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="3">
+      <Button fx:id="dosButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onPulsarAction" style="-fx-background-color: black;" text="2" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="3">
          <GridPane.margin>
             <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
          </GridPane.margin>
@@ -88,7 +88,7 @@
             <Font size="27.0" />
          </font>
       </Button>
-      <Button fx:id="tresButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: Black;" text="3" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="3">
+      <Button fx:id="tresButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onPulsarAction" style="-fx-background-color: Black;" text="3" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="3">
          <GridPane.margin>
             <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
          </GridPane.margin>
@@ -104,7 +104,7 @@
             <Font size="27.0" />
          </font>
       </Button>
-      <Button fx:id="ceroButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: black;" text="0" textFill="WHITE" GridPane.columnSpan="2" GridPane.rowIndex="4">
+      <Button fx:id="ceroButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onPulsarAction" style="-fx-background-color: black;" text="0" textFill="WHITE" GridPane.columnSpan="2" GridPane.rowIndex="4">
          <GridPane.margin>
             <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
          </GridPane.margin>
@@ -136,7 +136,7 @@
             <Font size="27.0" />
          </font>
       </Button>
-      <Button fx:id="cuatroButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: black;" text="4" textFill="WHITE" GridPane.rowIndex="2">
+      <Button fx:id="cuatroButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onPulsarAction" style="-fx-background-color: black;" text="4" textFill="WHITE" GridPane.rowIndex="2">
          <GridPane.margin>
             <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
          </GridPane.margin>
@@ -144,7 +144,7 @@
             <Font size="27.0" />
          </font>
       </Button>
-      <Button fx:id="cincoButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: black;" text="5" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2">
+      <Button fx:id="cincoButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onPulsarAction" style="-fx-background-color: black;" text="5" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2">
          <GridPane.margin>
             <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
          </GridPane.margin>
@@ -152,7 +152,7 @@
             <Font size="27.0" />
          </font>
       </Button>
-      <Button fx:id="seisButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: black;" text="6" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="2">
+      <Button fx:id="seisButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onPulsarAction" style="-fx-background-color: black;" text="6" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="2">
          <GridPane.margin>
             <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
          </GridPane.margin>

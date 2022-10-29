@@ -9,7 +9,6 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
-import javafx.scene.control.Labeled;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 
@@ -90,8 +89,7 @@ public class Controller implements Initializable{
 		@Override
 		public void initialize(URL arg0, ResourceBundle arg1) {
 			
-			
-			
+			calcViewText.textProperty().bind(calc.pantallaProperty());
 		}
 	    
 	    @FXML
@@ -116,36 +114,40 @@ public class Controller implements Initializable{
 	    void onDividir(ActionEvent event) {
 
 	    	char division=(((Button) event.getSource()).getText().charAt(0));
-	    	calc.
+	    	calc.operar(division);
 	    }
 
 	    @FXML
 	    void onIgual(ActionEvent event) {
 
-	    	System.out.println(calc.getPantalla());
+	    	calc.getPantallaproperty();
 	    }
 
 	    @FXML
 	    void onMultiplicar(ActionEvent event) {
 
+	    	char multiplicar=(((Button) event.getSource()).getText().charAt(0));
+	    	calc.operar(multiplicar);
 	    }
 
 	    @FXML
 	    void onPulsarAction(ActionEvent event) {
 
 	    	char operando = ((Button)event.getSource()).getText().charAt(0);
-			calc.operar(operando);
+			calc.insertar(operando);
 	    	
 	    }
 
 	    @FXML
 	    void onRestar(ActionEvent event) {
-
+	    	char restar=(((Button) event.getSource()).getText().charAt(0));
+	    	calc.operar(restar);
 	    }
 
 	    @FXML
 	    void onSumar(ActionEvent event) {
-
+	    	char sumar=(((Button) event.getSource()).getText().charAt(0));
+	    	calc.operar(sumar);
 	    }
 
 	    public GridPane getView() {
