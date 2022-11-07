@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<GridPane fx:id="view" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<GridPane fx:id="view" hgap="5.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" vgap="5.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
   <columnConstraints>
     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -28,13 +28,10 @@
          <font>
             <Font size="27.0" />
          </font>
-         <GridPane.margin>
-            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-         </GridPane.margin>
       </TextField>
       <Button fx:id="sieteButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onPulsarAction" style="-fx-background-color: black;" text="7" textFill="WHITE" GridPane.rowIndex="1">
          <GridPane.margin>
-            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            <Insets />
          </GridPane.margin>
          <font>
             <Font size="27.0" />
@@ -42,7 +39,7 @@
       </Button>
       <Button fx:id="ochoButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onPulsarAction" style="-fx-background-color: black;" text="8" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
          <GridPane.margin>
-            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            <Insets />
          </GridPane.margin>
          <font>
             <Font size="27.0" />
@@ -50,7 +47,7 @@
       </Button>
       <Button fx:id="nueveButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onPulsarAction" style="-fx-background-color: black;" text="9" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="1">
          <GridPane.margin>
-            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            <Insets />
          </GridPane.margin>
          <font>
             <Font size="27.0" />
@@ -58,123 +55,84 @@
       </Button>
       <Button fx:id="ceButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onBorrarTodo" style="-fx-background-color: grey;" text="CE" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="1">
          <GridPane.margin>
-            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            <Insets />
          </GridPane.margin>
          <font>
             <Font size="27.0" />
          </font>
       </Button>
       <Button fx:id="cButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onBorrar" style="-fx-background-color: grey;" text="C" textFill="WHITE" GridPane.columnIndex="4" GridPane.rowIndex="1">
-         <GridPane.margin>
-            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-         </GridPane.margin>
          <font>
             <Font size="27.0" />
          </font>
       </Button>
       <Button fx:id="unoButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onPulsarAction" style="-fx-background-color: black;" text="1" textFill="WHITE" GridPane.rowIndex="3">
-         <GridPane.margin>
-            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-         </GridPane.margin>
          <font>
             <Font size="27.0" />
          </font>
       </Button>
       <Button fx:id="dosButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onPulsarAction" style="-fx-background-color: black;" text="2" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="3">
-         <GridPane.margin>
-            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-         </GridPane.margin>
          <font>
             <Font size="27.0" />
          </font>
       </Button>
       <Button fx:id="tresButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onPulsarAction" style="-fx-background-color: Black;" text="3" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="3">
-         <GridPane.margin>
-            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-         </GridPane.margin>
          <font>
             <Font size="27.0" />
          </font>
       </Button>
       <Button fx:id="menosButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onRestar" style="-fx-background-color: grey;" text="-" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="3">
-         <GridPane.margin>
-            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-         </GridPane.margin>
          <font>
             <Font size="27.0" />
          </font>
       </Button>
       <Button fx:id="ceroButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onPulsarAction" style="-fx-background-color: black;" text="0" textFill="WHITE" GridPane.columnSpan="2" GridPane.rowIndex="4">
-         <GridPane.margin>
-            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-         </GridPane.margin>
          <font>
             <Font size="27.0" />
          </font>
       </Button>
       <Button fx:id="puntoButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onComa" style="-fx-background-color: Black;" text="." textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="4">
-         <GridPane.margin>
-            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-         </GridPane.margin>
          <font>
             <Font size="27.0" />
          </font>
       </Button>
       <Button fx:id="sumaButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSumar" style="-fx-background-color: grey;" text="+" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="4">
-         <GridPane.margin>
-            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-         </GridPane.margin>
          <font>
             <Font size="27.0" />
          </font>
       </Button>
       <Button fx:id="igualButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onIgual" style="-fx-background-color: gold;" text="=" GridPane.columnIndex="4" GridPane.rowIndex="3" GridPane.rowSpan="2">
-         <GridPane.margin>
-            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-         </GridPane.margin>
          <font>
             <Font size="27.0" />
          </font>
       </Button>
       <Button fx:id="cuatroButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onPulsarAction" style="-fx-background-color: black;" text="4" textFill="WHITE" GridPane.rowIndex="2">
-         <GridPane.margin>
-            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-         </GridPane.margin>
          <font>
             <Font size="27.0" />
          </font>
       </Button>
       <Button fx:id="cincoButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onPulsarAction" style="-fx-background-color: black;" text="5" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2">
-         <GridPane.margin>
-            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-         </GridPane.margin>
          <font>
             <Font size="27.0" />
          </font>
       </Button>
       <Button fx:id="seisButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onPulsarAction" style="-fx-background-color: black;" text="6" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="2">
-         <GridPane.margin>
-            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-         </GridPane.margin>
          <font>
             <Font size="27.0" />
          </font>
       </Button>
       <Button fx:id="multiplicarButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onMultiplicar" style="-fx-background-color: grey;" text="*" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="2">
-         <GridPane.margin>
-            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-         </GridPane.margin>
          <font>
             <Font size="27.0" />
          </font>
       </Button>
       <Button fx:id="dividirButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onDividir" style="-fx-background-color: grey;" text="/" textFill="WHITE" GridPane.columnIndex="4" GridPane.rowIndex="2">
-         <GridPane.margin>
-            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-         </GridPane.margin>
          <font>
             <Font size="27.0" />
          </font>
       </Button>
    </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
 </GridPane>

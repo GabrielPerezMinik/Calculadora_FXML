@@ -79,7 +79,7 @@ public class Controller implements Initializable{
 	    
 	    public Controller() throws IOException {
 	    	
-	    	FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/Root.fxml"));
+	    	FXMLLoader loader = new FXMLLoader(getClass().getResource("/FXML/Root.fxml"));
 			loader.setController(this);
 			loader.load();
 	    	
@@ -120,7 +120,8 @@ public class Controller implements Initializable{
 	    @FXML
 	    void onIgual(ActionEvent event) {
 
-	    	calc.getPantallaproperty();
+	    	char igual=(((Button) event.getSource()).getText().charAt(0));
+	    	calc.operar(igual);
 	    }
 
 	    @FXML
